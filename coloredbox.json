@@ -4,7 +4,7 @@
  "name": "Colored Box",
  "description": "A colored box",
  "newInstancePrefix": "ColoredBox",
- "icon": "https://albavs.github.io/CustomWidgetsSAC/icon.png",
+ "icon": "https://albavs.github.io/SAC_CustomWidgets/icon.png",
  "vendor": "SAP",
  "eula": "",
  "license": "",
@@ -12,21 +12,21 @@
  {
  "kind": "main",
  "tag": "com-sap-sample-coloredbox",
- "url": "https://albavs.github.io/CustomWidgetsSAC/coloredbox.js",
+ "url": "https://albavs.github.io/SAC_CustomWidgets/coloredbox.js",
  "integrity": "",
  "ignoreIntegrity": true
  },
  {
  "kind": "styling",
  "tag": "com-sap-sample-coloredbox-styling",
- "url": "https://albavs.github.io/CustomWidgetsSAC/coloredbox_styling.js",
+ "url": "https://albavs.github.io/SAC_CustomWidgets/coloredbox_styling.js",
  "integrity": "",
  "ignoreIntegrity": true
  },
  {
  "kind": "builder",
  "tag": "com-sap-sample-coloredbox-builder",
- "url": "https://albavs.github.io/CustomWidgetsSAC/coloredbox_builder.js",
+ "url": "https://albavs.github.io/SAC_CustomWidgets/coloredbox_builder.js",
  "integrity": "",
  "ignoreIntegrity": true
  }
