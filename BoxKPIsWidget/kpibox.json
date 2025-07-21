@@ -1,0 +1,36 @@
+{
+    "id": "com.sap.boxofkpis.kpibox",
+    "version": "1.0.0",
+    "name": "KPIs Box",
+    "description": "A box to visualizate KPIs",
+    "newInstancePrefix": "KPIBox",
+    "vendor": "SAP",
+    "eula": "",
+    "license": "",
+    "webcomponents": [
+        {
+            "kind": "main",
+            "tag": "com-sap-boxofkpis-kpibox",
+            "url": "https://albavs.github.io/SAC_CustomWidgets/BoxKPIsWidget/kpibox.js",
+            "integrity": "",
+            "ignoreIntegrity": true
+        }
+    ],
+    "properties": {
+        "valor1": {
+            "type": "number",
+            "description": "Value 1"
+        },
+        "valor2": {
+            "type": "number",
+            "description": "Value 2"
+        },
+        "valor3": {
+            "type": "number",
+            "description": "Value 3"
+        }
+    },
+    "methods": {},
+    "events": {}
+}
+
