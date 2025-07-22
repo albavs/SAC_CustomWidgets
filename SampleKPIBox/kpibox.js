@@ -32,7 +32,26 @@
       this._props = { ...this._props, ...changedProperties };
     }
 
-    onCustomWidgetDataUpdate(binding){
+    onCustomWidgetDataUpdate(binding) {
+  const resultSet = binding?.dataBinding1;
+
+  if (resultSet?.data?.length > 0 && Array.isArray(resultSet.data[0])) {
+    const row = resultSet.data[0];
+    const valor1 = row[0]?.rawValue ?? 0;
+    const valor2 = row[1]?.rawValue ?? 0;
+    const valor3 = row[2]?.rawValue ?? 0;
+
+    this.shadowRoot.getElementById("valor1").textContent = `Valor 1: ${valor1}`;
+    this.shadowRoot.getElementById("valor2").textContent = `Valor 2: ${valor2}`;
+    this.shadowRoot.getElementById("valor3").textContent = `Valor 3: ${valor3}`;
+  } else {
+    this.shadowRoot.getElementById("valor1").textContent = `Valor 1: -`;
+    this.shadowRoot.getElementById("valor2").textContent = `Valor 2: -`;
+    this.shadowRoot.getElementById("valor3").textContent = `Valor 3: -`;
+  }
+}
+
+  /*  onCustomWidgetDataUpdate(binding){
       const data = binding.dataBinding1;
       if(data?.data?.length > 0){
         const row = data.data[0];
@@ -43,7 +62,7 @@
         this.shadowRoot.getElementById("value2").textContent = "Value 2: ${v2}";
         this.shadowRoot.getElementById("value3").textContent = "Value 3: ${v3}";
       }
-    }
+    } */
 
    /* onCustomWidgetAfterUpdate(changedProperties) {
       if ("valor1" in changedProperties) {
