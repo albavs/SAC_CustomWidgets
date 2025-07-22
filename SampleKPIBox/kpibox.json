@@ -34,11 +34,7 @@
         }
     },
     "dataBindings": {
-        "dataBinding1": {
-            "type": "data",
-            "description": "Data Binding for KPI values",
-            "required": true
-        }
+        "name": "dataBinding1"
     },
     "methods": {
         "setValue1":{
