@@ -1,0 +1,63 @@
+{
+    "id": "com.sap.boxofkpis.kpibox",
+    "version": "1.0.0",
+    "name": "KPIs Box",
+    "description": "A box to visualizate KPIs",
+    "newInstancePrefix": "KPIBox",
+    "vendor": "SAP",
+    "eula": "",
+    "license": "",
+    "webcomponents": [
+        {
+            "kind": "main",
+            "tag": "com-sap-boxofkpis-kpibox",
+            "url": "https://albavs.github.io/SAC_CustomWidgets/BoxKPIsWidget/kpibox.js",
+            "integrity": "",
+            "ignoreIntegrity": true
+        }
+    ],
+    "properties": {
+        "value1": {
+            "type": "number",
+            "description": "Value 1",
+            "default": 0
+        },
+        "value2": {
+            "type": "number",
+            "description": "Value 2",
+            "default": 0
+        },
+        "value3": {
+            "type": "number",
+            "description": "Value 3",
+            "default": 0
+        }
+    },
+    "dataBindings": {
+        "dataBinding1": {
+            "type": "data",
+            "description": "Data Binding for KPI values",
+            "required": true
+        }
+    },
+    "methods": {
+        "setValue1":{
+            "description": "Set value for KPI 1",
+            "parameters": [
+                {
+                "name": "newValue1",
+                "type": "number",
+                "description": "New Value1"
+            }
+        ],
+        "body" : "this.value1 = newValue1;"
+        },
+        "getValue1":{
+            "returnType": "number",
+            "description": "Get value for KPI 1",
+            "body": "return this.value1"
+        }
+    },
+    "events": {}
+}
+
