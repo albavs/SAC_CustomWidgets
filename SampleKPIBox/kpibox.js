@@ -32,18 +32,16 @@
       this._props = { ...this._props, ...changedProperties };
     }
 
-    onCustomWidgetDataUpdate(dataBinding){
-      const data = dataBinding.dataBinding1;
-      if(data && data.data.length > 0){
+    onCustomWidgetDataUpdate(binding){
+      const data = binding.dataBinding1;
+      if(data?.data?.length > 0){
         const row = data.data[0];
+        const[v1, v2, v3] = row.map(cell => cell?.rawValue ?? 0);
 
-        const value1 = row[0]?.rawValue || 0;
-        const value2 = row[0]?.rawValue || 0;
-        const value3 = row[0]?.rawValue || 0;
 
-        this.shadowRoot.getElementById("value1").textContent = "Value 1: " + value1;
-        this.shadowRoot.getElementById("value2").textContent = "Value 2: " + value2;
-        this.shadowRoot.getElementById("value3").textContent = "Value 3: " + value3;
+        this.shadowRoot.getElementById("value1").textContent = "Value 1: ${v1}";
+        this.shadowRoot.getElementById("value2").textContent = "Value 2: ${v2}";
+        this.shadowRoot.getElementById("value3").textContent = "Value 3: ${v3}";
       }
     }
 
