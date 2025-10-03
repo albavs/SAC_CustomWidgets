@@ -227,11 +227,12 @@ document.head.appendChild(script);
  
     // Called when data binding changes
     onCustomWidgetAfterUpdate(changedProps) {
-      if (changedProps.includes("dataBinding")) {
+      if ("dataBinding" in changedProps) {
         this.render();
       }
     }
   }
  
   customElements.define("com-expense-treemap", ExpenseTreemap);
+
 })();
