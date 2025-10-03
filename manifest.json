@@ -1,0 +1,38 @@
+{
+    "id": "com.expense.treemap",
+    "version": "1.0.0",
+    "name": "Treemap Widget",
+    "description": "Treemap for Other Expenses Categories",
+    "newInstancePrefix": "ExpenseTreemap",
+    "vendor": "Custom",
+    "eula": "",
+    "license": "",
+    "webcomponents": [{
+        "kind": "main",
+        "tag": "com-expense-treemap",
+        "url":"https://albavs.github.io/SAC_CustomWidgets/",
+        "integrity": "",
+        "ignoreIntegrity": true
+        }
+    ],
+    "properties":{},
+    "methods":{},
+    "events":{},
+    "dataBindings":{
+        "dataBinding":{
+            "feeds":[
+                {
+                    "id":"dimensions",
+                    "description": "Dimensions (optional)",
+                    "type": "dimension"
+                },
+                {
+                    "id": "measures",
+                    "description": "All expense measures",
+                    "type": "mainStructureMember"
+                }
+            ]
+        }
+    }
+
+}
